@@ -1,0 +1,61 @@
+/* Import a futuristic font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.background {
+  background-image: url('https://images.unsplash.com/photo-1580428185309-98aa23418f7d?auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 20, 0.6); /* space-like tint */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #0ff;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 0 5px #aaa;
+}
+
+button {
+  background-color: #00bfff;
+  border: none;
+  padding: 12px 30px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #00bfff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #007acc;
+  transform: scale(1.05);
+}
