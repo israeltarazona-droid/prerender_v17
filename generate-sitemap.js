@@ -11,7 +11,7 @@ async function generateSitemap() {
     { url: '/testPrerender', changefreq: 'monthly', priority: 0.8 },
   ];
 
-  const outputPath = path.resolve(__dirname, 'dist', 'prerender_v17' ,'sitemap.xml');
+  const outputPath = path.resolve(__dirname, 'dist', 'prerender_v17/browser' ,'sitemap.xml');
   const writeStream = createWriteStream(outputPath);
 
   sitemap.pipe(writeStream);
