@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 constructor(private meta: Meta, @Inject(DOCUMENT) private doc: Document) {}
   ngOnInit() {
     //Meta Tags- ROBOTS
-    this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
+    // this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
 
     //Insetar JSON-LD - SHEMA.ORG
     const script = this.doc.createElement('script');
