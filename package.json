@@ -4,11 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && node generate-sitemap.js",
+    "postbuild": "node generate-sitemap.js",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:prerender_v17": "node dist/prerender_v17/server/server.mjs",
-    "prerender": "ng build --prerender"
+    "prerender": "ng build --prerender && node generate-sitemap.js"
+   
   },
   "private": true,
   "dependencies": {
@@ -41,6 +43,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "sitemap": "^8.0.0",
     "typescript": "~5.4.2"
   }
 }

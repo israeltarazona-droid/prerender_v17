@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /home
+allow: /about
+allow: /testPrerender
+
+Sitemap: https://prerender-v17.web.app/sitemap.xml
